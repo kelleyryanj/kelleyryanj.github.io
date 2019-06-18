@@ -1,7 +1,15 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: sans-serif;
+    line-height: 1.618em;
+
     
+}
+
+html{
+    font-size: 16ps;
+    margin-top: 3em;
 }
 
 header,
@@ -15,12 +23,16 @@ header{
     padding: 2em;
 }
 
-header img{
-    width: 15%;
+#aboutMe img{
+    width: 30%;
     border: 1px solid black;
+
 }
 
+
+
 h1, h2, h3{
+    display: flex;
     background: #666;
     color: white;
     justify-content: center;
@@ -76,6 +88,33 @@ section ul{
     border: 1px black;
 }
 
+#aboutMeContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1em;
+    justify-content: center;
+    min-height: 10em;
+    
+    
+}
+
+#contactInfo{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#aboutMeContainer h3{
+    background:none;
+    color: Black;
+   
+}
+
+
+#aboutMeParagrah{
+   margin-top: 2em; 
+    grid-column: 1 2fr;
+}
+
 footer{
     display: flex;
     flex-flow: row;
@@ -88,3 +127,4 @@ footer p{
     color: white;
     padding: .5em 2em;
 }
+
