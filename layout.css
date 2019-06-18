@@ -29,25 +29,18 @@ header{
     margin: auto;
     width: 100%;
     max-width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: 1fr, 2fr;
     grid-column-gap: 1em;
     justify-content: center;
+    align-content: center;
     min-height: 10em;
     
 }
 #headshot {
-    
     background: #aaa;
 }
 
-#headshot img{
-    margin-left: 7em;
-}
-
-
-#contactInfo{
-    grid-column-start: 1 / span 2;
+#contactInfo{    
     background: #bbb;
 }
 #aboutMeContainer h3{
@@ -113,6 +106,7 @@ section{
 section ul{
     padding-left: 1.5em;
     list-style-type: none;
+    font-size: 12px;
 
 }
 #projectsContainer {
@@ -125,11 +119,12 @@ section ul{
 
 }
 
-#projectsContainer article{
+.projectBoxes {
     border: 1px black;
     background: #ddd;
     padding: 1em;
     margin: .5em;
+    border-radius: 8px;
     
 }
 #projectsContainer img{
