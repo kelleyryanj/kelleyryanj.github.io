@@ -109,8 +109,7 @@ section ul{
 #projectsContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    
+    grid-template-rows: auto;    
     grid-column-gap: 1em;
 
 }
@@ -126,8 +125,6 @@ section ul{
     width: 100%;
     border: 1px black;
 }
-
-
 
 
 #aboutMeParagrah{
