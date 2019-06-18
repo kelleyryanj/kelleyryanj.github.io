@@ -26,7 +26,9 @@ header{
 
 #aboutMeContainer{
     display: flex;
+    margin: auto;
     width: 100%;
+    max-width: 90%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 1em;
@@ -110,9 +112,13 @@ section{
 }
 section ul{
     padding-left: 1.5em;
+    list-style-type: none;
+
 }
 #projectsContainer {
     display: grid;
+    width: 100%;
+    max-width: 90%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;    
     grid-column-gap: 1em;
