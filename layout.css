@@ -8,7 +8,7 @@
 }
 
 html{
-    font-size: 16ps;
+    font-size: 16px;
     margin-top: 3em;
 }
 
@@ -23,15 +23,53 @@ header{
     padding: 2em;
 }
 
-#aboutMe img{
-    width: 30%;
-    border: 1px solid black;
 
+#aboutMeContainer{
+    display: flex;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1em;
+    justify-content: center;
+    min-height: 10em;
+    
+}
+#headshot {
+    background: #aaa;
 }
 
 
+#contactInfo{
+    grid-column-start: 1 / span 2;
+    background: #bbb;
+}
+#aboutMeContainer h3{
+    background:none;
+    color: Black;
+                   
+}
+ #aboutMeContainer ul{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    list-style-type: none;
+                    
+                
+}
+#aboutMe img{
+    width: 40%;
+    border: 1px solid black;
 
-h1, h2, h3{
+}
+h1{
+    width: 100%;
+    display: flex;
+    background: #666;
+    color: white;
+}
+
+
+h2, h3{
     display: flex;
     background: #666;
     color: white;
@@ -68,46 +106,28 @@ section{
 section ul{
     padding-left: 1.5em;
 }
-#container{
+#projectsContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+    
     grid-column-gap: 1em;
 
 }
 
-#container article{
+#projectsContainer article{
     border: 1px black;
     background: #ddd;
     padding: 1em;
     margin: .5em;
     
 }
-#container img{
+#projectsContainer img{
     width: 100%;
     border: 1px black;
 }
 
-#aboutMeContainer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 1em;
-    justify-content: center;
-    min-height: 10em;
-    
-    
-}
 
-#contactInfo{
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-#aboutMeContainer h3{
-    background:none;
-    color: Black;
-   
-}
 
 
 #aboutMeParagrah{
