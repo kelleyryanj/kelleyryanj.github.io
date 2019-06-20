@@ -195,6 +195,10 @@ footer p{
 
 @media only screen and (max-width: 600px){
 
+    h1, h2, h3{
+        width: 100%;
+    }
+    
     #aboutMeContainer {
         display: flex;
         flex-flow: column;
@@ -240,5 +244,6 @@ footer p{
     footer {
         font-size: 10px;
         margin: 0;
+        text-decoration: none;
     }
 }
