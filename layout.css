@@ -39,14 +39,10 @@ header{
 }
 #headshot {
     margin: 0 auto;
-    background: #aaa;
 
 }
 
-#contactInfo{    
-    
-    background: #bbb;
-}
+
 #aboutMeContainer h3{
     
     background:none;
@@ -62,101 +58,111 @@ header{
                 
 }
 #aboutMe img{
-    width: 40%;
+
     border: 1px solid black;
+    width: 40%;
 
 }
 h1{
-    width: 100%;
-    display: flex;
-    background: #666;
+    background: rgb(24, 12, 126);
     color: white;
+    display: flex;
+    width: 100%;
 }
 
 
 h2, h3{
-    display: flex;
-    background: #666;
+    background: rgb(24, 12, 126);
     color: white;
+    display: flex;
     justify-content: center;
 }
 
 nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    background: rgb(24, 12, 126);
     display: flex;
     flex-flow: row;
     justify-content: center;
-    background: #666;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
     
 }
 
 nav a{
-    text-decoration: none;
     color: white;
     padding: .5em 2em;
+    text-decoration: none;
 }
 
 nav a:hover{
     background: #999;
-    transition: .5s;
+    transition: 1s;
 
 }
 
 section{
     margin: 1em 0;
-    padding-top: 3em;
     min-height: 10em;
+    padding-top: 3em;
 }
 section ul{
-    padding-left: 1.5em;
-    list-style-type: none;
-    font-size: 12px;
     border-radius: 8px;
+    font-size: 12px;
+    list-style-type: none;
+    padding-left: 1.5em;
 
 }
 #projectsContainer {
     display: grid;
-    width: 100%;
-    max-width: 90%;
+    grid-column-gap: 1em;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;    
-    grid-column-gap: 1em;
-    justify-content: space-around;
+    margin: auto auto;
+    max-width: 90%;
+    width: 100%;
     
 }
 
 .projectBoxes {
-    display: grid;
-    border: 1px black;
     background: #ddd;
-    padding: 1em;
-    margin: .5em;
+    border: 1px black;
     border-radius: 8px;
+    display: grid;
     height: 285px;
     justify-content: center;
+    padding: 1em;
+    margin: .5em;
     
     
 }
 
 .projectBoxes h3{
     display: grid;
-    justify-content: center;
     font-size: 14px;
     height: 1.5em;
+    justify-content: center;
     
 }
 
 .projectBoxes a{
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    
+    
+}
+
+.projectBoxes a:hover{
+    background: #999;
+    transition: 1s;
 }
 
 .projectBoxes img{
-    width: 100%;
     border: 1px black;
+    width: 100%;
+    height: 100%;
+    
     
 }
 
@@ -170,20 +176,69 @@ section ul{
 
 
 #aboutMeParagrah{
-   margin-top: 2em; 
     grid-column: 1 2fr;
+   margin-top: 2em; 
 }
 
 footer{
+    background: rgb(24, 12, 126);
     display: flex;
     flex-flow: row;
     justify-content: center;
-    background: #666;
 }
 
 footer p{
-    text-decoration: none;
     color: white;
     padding: .5em 2em;
+    text-decoration: none;
 }
 
+@media only screen and (max-width: 600px){
+
+    #aboutMeContainer {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+    #projectsContainer {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        margin-bottom: 90px;
+    }
+
+    #contactInfo h3{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #contactInfo ul{
+        display: grid;
+        padding-left: 2.5em;       
+        
+        margin: auto auto;
+    }
+
+    #headshot{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 17em;
+        
+    }
+
+    .projectBoxes{
+        padding-bottom: 8em;
+    }
+
+    .projectBoxes ul{
+        margin-bottom: 1em;
+    }
+    footer {
+        font-size: 10px;
+        margin: 0;
+    }
+}
