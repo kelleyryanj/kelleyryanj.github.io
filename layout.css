@@ -24,6 +24,12 @@ header{
     padding: .5em;
 }
 
+h1{
+    background: rgb(24, 12, 126);
+    color: white;
+    display: flex;
+    width: 100%;
+}
 
 #aboutMeContainer{
     align-content: center;
@@ -39,7 +45,7 @@ header{
 }
 #headshot {
     margin: 0 auto;
-
+    
 }
 
 
@@ -47,28 +53,26 @@ header{
     
     background:none;
     color: Black;
-                   
+    
 }
- #aboutMeContainer ul{
+#aboutMeContainer ul{
     display: flex;
     flex-flow: column;
     justify-content: center;
     list-style-type: none;
-                    
-                
+    
+    
 }
 #aboutMe img{
-
+    
     border: 1px solid black;
-    width: 40%;
-
+    width: 70%;
+    
 }
-h1{
-    background: rgb(24, 12, 126);
-    color: white;
-    display: flex;
-    width: 100%;
-}
+#aboutMeParagrah{
+grid-column: 1 2fr;
+margin-top: 2em; 
+        }
 
 
 h2, h3{
@@ -76,30 +80,6 @@ h2, h3{
     color: white;
     display: flex;
     justify-content: center;
-}
-
-nav{
-    background: rgb(24, 12, 126);
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    
-}
-
-nav a{
-    color: white;
-    padding: .5em 2em;
-    text-decoration: none;
-}
-
-nav a:hover{
-    background: #999;
-    transition: 1s;
-
 }
 
 section{
@@ -112,7 +92,7 @@ section ul{
     font-size: 12px;
     list-style-type: none;
     padding-left: 1.5em;
-
+    
 }
 #projectsContainer {
     display: grid;
@@ -167,7 +147,7 @@ section ul{
 }
 
 .projectBoxes ul
- {
+{
     display: grid;
     justify-content: left;
 }
@@ -175,11 +155,29 @@ section ul{
 
 
 
-#aboutMeParagrah{
-    grid-column: 1 2fr;
-   margin-top: 2em; 
-}
 
+nav{
+    background: rgb(24, 12, 126);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+        nav a{
+            color: white;
+            padding: .5em 2em;
+            text-decoration: none;
+        }
+        
+        nav a:hover{
+            background: #999;
+            transition: 1s;
+            
+        }
 footer{
     background: rgb(24, 12, 126);
     display: flex;
@@ -194,7 +192,7 @@ footer p{
 }
 
 @media only screen and (max-width: 600px){
-
+    
     h1, h2, h3{
         width: 100%;
     }
@@ -227,10 +225,15 @@ footer p{
     }
 
     #headshot{
+        align-content: center;
         display: flex;
         justify-content: center;
-        align-content: center;
-        height: 17em;
+        height: 12em;
+        width: 14em;
+        max-width: 90%;
+        max-height: 90%;
+        
+
         
     }
 
