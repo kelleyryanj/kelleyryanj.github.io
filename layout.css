@@ -17,6 +17,8 @@ html{
 
 body{
     background-image: url("images/background.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 header,
@@ -54,11 +56,8 @@ h1{
 }
 
 #headshot{
-    margin: 1em auto;
-}
-#headshot img{
-    margin: auto auto;
-    
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -150,7 +149,8 @@ h1{
 }
 
 #aboutMetext{
-    padding 1em 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 
@@ -295,6 +295,17 @@ section ul{
     display: grid;
     justify-content: left;
 }
+.close1 {
+    color: #aaa;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+.close1:hover, .close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 
@@ -419,8 +430,8 @@ footer p{
         align-content: center;
         display: flex;
         justify-content: center;
-        height: 12em;
-        width: 14em;
+        margin: auto auto;
+       
         max-width: 90%;
         max-height: 90%;
         

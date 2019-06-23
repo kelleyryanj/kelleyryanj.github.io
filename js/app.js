@@ -39,14 +39,15 @@ function openTab(tabName) {
     for (i=0; i< x.length; i++) {
         x[i].style.display = "none";
           }
-          document.getElementById(tabName).style.display ="block"
-}
+          document.getElementById(tabName).style.display ="block"          
+        }
 
 var modal = document.getElementById("contactModal");
 
 var btn = document.getElementById("contactButton");
 
 var span = document.getElementsByClassName("close")[0];
+
 
 btn.onclick= function() {
     modal.style.display = "block";
@@ -57,7 +58,7 @@ span.onclick = function() {
 
 }
 
-window. onclick =function (event) {
+window.onclick =function (event) {
     if(event.target == modal) {
         modal.style.display = "none";
     }
