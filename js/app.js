@@ -28,18 +28,30 @@ function navOnClick() {
 
 window.onclick = function(event) {
       var dropdowns = document.getElementsByClassName("dropdownContent");
-      if(event.target =! dropdowns) {
+      if(event.target == dropdowns) {
             dropdowns.style.display = "none";
         }
     }
 
+
+var closebtns = document.getElementsByClassName("close1");
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+        closebtns[i].addEventListener("click", function() {
+        this.parentElement.style.display = 'none';
+      });
+    }
 function openTab(tabName) {
-    var i, x;
+    let i, x;
     x = document.getElementsByClassName("descContent");
-    for (i=0; i< x.length; i++) {
-        x[i].style.display = "none";
-          }
-          document.getElementById(tabName).style.display ="block"          
+    for (i=0; i< x.length; i++) { if(
+        x[i].style.display = "none")      
+          document.getElementById(tabName).style.display ="block"  }
+        //   if(x[i].style.display = "block")   {
+        //     document.getElementById(tabName).style.display ="none"
+        //   } 
+              
         }
 
 var modal = document.getElementById("contactModal");

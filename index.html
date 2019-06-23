@@ -51,33 +51,77 @@
 
         </section>
 
-       
+        <div id="projectCarousel">
+        <h2 id="projectHeader">Projects</h2>        
             <div id="mainCarousel">
             <div class="imageCarousel fade">
-                <div class="slideNum"> 1 </div>
-                <img src= "images/fortune-teller-image.JPG" style="width:100%">
-                <div class="projectName">Fortune Teller</div>
+                    <article class="projectBoxes">
+                            <h3><a href="https://github.com/kelleyryanj/fortune-teller-project">Fortune Teller</a></h3>
+                           
+                            <a href="https://github.com/kelleyryanj/fortune-teller-project"><img src="images/fortune-teller-image.JPG"></a>
+                            <button class="descDrop" onclick="openTab('ul1');">Skills/Tech Used</button>
+                                     
+                            <ul id="ul1" class="descContent" style="display:none;"><span class="close1">&times;</span>
+                                <li>Java</li>
+                            </ul>
+                        
+                        </article>
             </div>
             <div class="imageCarousel fade">
-                <div class="slideNum"> 2 </div>
-                <img src= "images/virtual-pet-image.JPG" style="width:100%">
-                <div class="projectName">Virtual Pet</div>
+                    <article class="projectBoxes">
+                            <h3><a href="https://github.com/kelleyryanj/virtual-pet">Virtual Pet</a></h3>
+                            <a  href="https://github.com/kelleyryanj/virtual-pet"><img src="images/virtual-pet-image.JPG"></a>
+                            <button class="descDrop" onclick="openTab('ul2');">Skills/Tech Used</button>
+                            <ul id="ul2" class="descContent" style="display:none;"><span class="close1">&times;</span>
+                                        <li>Java</li>
+                                    </ul>
+                            </article>
             </div>
             <div class="imageCarousel fade">
-                <div class="slideNum"> 3 </div>
-                <img src= "images/virtual-pet-shelter-image.JPG" style="width:100%">
-                <div class="projectName">Pet Shelter</div>
+                    <article class="projectBoxes">
+                            <h3> <a href="https://github.com/kelleyryanj/virtual-pet-shelter">Virtual Pet Shelter</a></h3>
+                            <a href="https://github.com/kelleyryanj/virtual-pet-shelter"><img src="images/virtual-pet-shelter-image.JPG"></a>
+                            <button class="descDrop" onclick="openTab('ul3');">Skills/Tech Used</button>
+                            <ul id="ul3" class="descContent" style="display:none;"><span class="close1">&times;</span>
+                                    <li>Java</li>
+                                    <li>TDD</li>
+                                </ul>
+                        </article>
             </div>
             <div class="imageCarousel fade">
-                <div class="slideNum"> 4 </div>
-                <img src= "images/virtual-pets-amok-image.JPG" style="width:100%">
-                <div class="projectName">Virtual Pets Amok</div>
+                    <article class="projectBoxes">
+                            <h3><a href="https://github.com/kelleyryanj/virtual-pets-amok">Virtual Pets Amok</a></h3>
+                            <a href="https://github.com/kelleyryanj/virtual-pets-amok"><img src="images/virtual-pets-amok-image.JPG"></a>
+                            <button class="descDrop" onclick="openTab('ul4');">Skills/Tech Used</button>
+                            <ul id="ul4" class="descContent" style="display:none;"><span class="close1">&times;</span>
+                                    <li>Java</li>
+                                    <li>TDD</li>
+                                    <li>Inheritance</li>
+                                </ul>
+                        </article>
+
+                
+            </div>
+            <div class="imageCarousel fade">
+                    <article class="projectBoxes">
+                            <h3><a href="https://github.com/kelleyryanj/review-site">Review Site</a></h3>
+                            <a href="https://github.com/kelleyryanj/review-site"><img src="images/review-site-image.JPG"></a>
+                            <button class="descDrop" onclick="openTab('ul5');">Skills/Tech Used</button>
+                            <ul id="ul5" class="descContent" style="display:none;"><span class="close1">&times;</span>
+                                    <li>Java</li>
+                                    <li>TDD</li>
+                                    <li>MVC Controller</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>                            
+                        </article>
+
+                
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-      
-       
+    </div>
         <section id="projects">
                 <h2>Projects</h2> 
                 <div id="projectsContainer">
@@ -85,9 +129,9 @@
                     <h3><a href="https://github.com/kelleyryanj/fortune-teller-project">Fortune Teller</a></h3>
                    
                     <a href="https://github.com/kelleyryanj/fortune-teller-project"><img src="images/fortune-teller-image.JPG"></a>
-                    <button class="descDrop" onclick="openTab('ul1');">Skills/Tech Used</button>
+                    <button class="descDrop" onclick="openTab('screenul1');">Skills/Tech Used</button>
                              
-                    <ul id="ul1" class="descContent" style="display:none;">
+                    <ul id="screenul1" class="descContent" style="display:none;"><span class="close1">&times;</span>
                         <li>Java</li>
                     </ul>
                 
@@ -95,16 +139,16 @@
                 <article class="projectBoxes">
                     <h3><a href="https://github.com/kelleyryanj/virtual-pet">Virtual Pet</a></h3>
                     <a  href="https://github.com/kelleyryanj/virtual-pet"><img src="images/virtual-pet-image.JPG"></a>
-                    <button class="descDrop" onclick="openTab('ul2');">Skills/Tech Used</button>
-                    <ul id="ul2" class="descContent" style="display:none;">
+                    <button class="descDrop" onclick="openTab('screenul2');">Skills/Tech Used</button>
+                    <ul id="screenul2" class="descContent" style="display:none;"><span class="close1">&times;</span>
                                 <li>Java</li>
                             </ul>
                     </article>
                 <article class="projectBoxes">
                         <h3> <a href="https://github.com/kelleyryanj/virtual-pet-shelter">Virtual Pet Shelter</a></h3>
                         <a href="https://github.com/kelleyryanj/virtual-pet-shelter"><img src="images/virtual-pet-shelter-image.JPG"></a>
-                        <button class="descDrop" onclick="openTab('ul3');">Skills/Tech Used</button>
-                        <ul id="ul3" class="descContent" style="display:none;">
+                        <button class="descDrop" onclick="openTab('screenul3');">Skills/Tech Used</button>
+                        <ul id="screenul3" class="descContent" style="display:none;"><span class="close1">&times;</span>
                                 <li>Java</li>
                                 <li>TDD</li>
                             </ul>
@@ -112,8 +156,8 @@
                 <article class="projectBoxes">
                         <h3><a href="https://github.com/kelleyryanj/virtual-pets-amok">Virtual Pets Amok</a></h3>
                         <a href="https://github.com/kelleyryanj/virtual-pets-amok"><img src="images/virtual-pets-amok-image.JPG"></a>
-                        <button class="descDrop" onclick="openTab('ul4');">Skills/Tech Used</button>
-                        <ul id="ul4" class="descContent" style="display:none;">
+                        <button class="descDrop" onclick="openTab('screenul4');">Skills/Tech Used</button>
+                        <ul id="screenul4" class="descContent" style="display:none;"><span class="close1">&times;</span>
                                 <li>Java</li>
                                 <li>TDD</li>
                                 <li>Inheritance</li>
@@ -122,8 +166,8 @@
                     <article class="projectBoxes">
                             <h3><a href="https://github.com/kelleyryanj/review-site">Review Site</a></h3>
                             <a href="https://github.com/kelleyryanj/review-site"><img src="images/review-site-image.JPG"></a>
-                            <button class="descDrop" onclick="openTab('ul5');">Skills/Tech Used</button>
-                            <ul id="ul5" class="descContent" style="display:none;">
+                            <button class="descDrop" onclick="openTab('screenul5');">Skills/Tech Used</button>
+                            <ul id="screenul5" class="descContent" style="display:none;"><span class="close1">&times;</span>
                                     <li>Java</li>
                                     <li>TDD</li>
                                     <li>MVC Controller</li>
@@ -133,11 +177,13 @@
                         </article>
                     </div>
             </section>
+       
+       
         
         <div class="navBar">
         <nav>
             <a class="mainNavItems" href="#aboutMe">About Me</a>
-            <a class="mainNavItems" href="#projects">Projects</a>
+            <a class="mainNavItems" href="#projectHeader">Projects</a>
             <div class="dropDown">
             <a onclick="navOnClick()" class="dropButton">Menu</a>
             <div id="navDrop" class="dropdownContent">

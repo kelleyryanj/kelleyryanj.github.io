@@ -151,6 +151,7 @@ h1{
 #aboutMetext{
     padding-left: 1em;
     padding-right: 1em;
+    padding-top: 1em;
 }
 
 
@@ -179,6 +180,8 @@ section ul{
     max-width: 1000px;
     position: relative;
     margin: auto auto;
+    height: 550px;
+    padding: auto;
 }
 
 .imageCarousel{
@@ -209,7 +212,7 @@ section ul{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: .6s ease;
@@ -222,7 +225,8 @@ section ul{
     border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover{
-    background: rgba(0, 0, 0, .8);
+    background: rgba(24, 12, 126, 0.8);
+    color: white;
 }
 
 .projectName{
@@ -237,6 +241,10 @@ section ul{
     padding: 8px 12px;
     position: absolute;
     top: 0;
+}
+
+#projects{
+    display: none;
 }
 #projectsContainer {
     display: grid;
@@ -296,9 +304,9 @@ section ul{
     justify-content: left;
 }
 .close1 {
-    color: #aaa;
+    color: black;
     float: right;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 .close1:hover, .close1:focus {
@@ -442,10 +450,17 @@ footer p{
         width: 90%;
     }
 
+    #projectCarousel{
+        display: none;
+    }
     
+    #projects{
+        display: block;
+    }
 
     .projectBoxes{
         padding-bottom: 8em;
+        
     }
 
     .projectBoxes ul{
@@ -508,6 +523,10 @@ footer p{
         background-color: inherit;
         font-family: inherit;
         margin: 0;
+    }
+
+    .close1{
+        padding-right: 1em;
     }
 
   
