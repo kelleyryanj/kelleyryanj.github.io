@@ -8,6 +8,7 @@
     <title>Ryan Kelley: Coder</title>
 </head>
 <body>
+    <div id="mainBody">
     <header>
         <h1> Ryan James Kelley</h1>       
         <p> Junior Developer in training</p>
@@ -26,16 +27,17 @@
             <div id="contactModal" class="modal">
                 <div class="modalContent"> 
                     <span class="close">&times;</span>
-                <ul>
+                <ul id="contactList">
                     <li>Email: kelley.ryanj@gmail.com</li>
-                    <li>GitHub username:<a href="https://github.com/kelleyryanjgithub">kelleyryanj</a></li>
-                    <li>LinkedIn Page:<a href="https://linkedin.com/in/ryan-kelley-804b5374">linkedin.com/in/ryan-kelley-804b5374</a></li>
+                    <li>GitHub username:<a href="https://github.com/kelleyryanjgithub"> kelleyryanj</a></li>
+                    <li>LinkedIn Page:<a href="https://linkedin.com/in/ryan-kelley-804b5374"> linkedin.com/in/ryan-kelley-804b5374</a></li>
                 </ul>
             </div> 
             </div>
             </article>
             </div>
-                <p>Strategic, service-oriented leader with a tradition of performance excellence in a wide variety of retail
+            <div id="aboutMetext"> 
+            <p>Strategic, service-oriented leader with a tradition of performance excellence in a wide variety of retail
                     management capacities to include: talent development, driving profitable sales and operational
                     excellence for one of the world's leading retailers. Skilled in assessing talent, operations and identifying
                     areas of improvement by implementing strategies and performance management practices to drive best in
@@ -43,7 +45,8 @@
                     budget improvements and profit maximization for multi-million dollar business. History of building
                     committed teams through effective mix of proactive leadership strengths and skills in communication,
                     team management and true dedication to leadership-by-example. </p>
-        </article>
+                </div> 
+                </article>
         
 
         </section>
@@ -130,13 +133,13 @@
         
         <div class="navBar">
         <nav>
-            <a href="#aboutMe">About Me</a>
-            <a href="#projects">Projects</a>
+            <a class="mainNavItems" href="#aboutMe">About Me</a>
+            <a class="mainNavItems" href="#projects">Projects</a>
             <div class="dropDown">
-            <a onclick="navOnClick()" class="dropButton">SiteNav</a>
+            <a onclick="navOnClick()" class="dropButton">Menu</a>
             <div id="navDrop" class="dropdownContent">
                 <a href="#aboutMe">About Me</a>
-                <a href="projects">Projects</a>
+                <a href="#projects">Projects</a>
             </div>
             </div>
         </nav>
@@ -149,6 +152,7 @@
 
         </footer>
     </main>
+</div>
     <script src="./js/app.js"></script>
 </body>
 </html>
