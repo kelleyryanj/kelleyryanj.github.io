@@ -17,8 +17,8 @@ html{
 
 body{
     background-image: url("images/background.jpg");
-    background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+  
 }
 
 header,
@@ -313,7 +313,8 @@ section ul{
     background: rgb(24, 12, 126);
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: center;    
+    align-content: center;
     left: 0;
     position: fixed;
     top: 0;
@@ -327,6 +328,7 @@ section ul{
 
         .navBar a{
             color: white;
+            margin: auto auto;
             padding: .5em 2em;
             text-decoration: none;
         }
