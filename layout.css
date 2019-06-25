@@ -3,20 +3,31 @@
     line-height: 1.618em;
     margin: 0px;
     padding: 0px;
+    
 
     
 }
 
 html{
+
+   
     font-size: 16px;
     margin-top: 3em;
 }
 
+body{
+    background-image: url("images/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 header,
-main,
+main, #mainBody,
 footer{
+    background-color: #ddd;
     margin: 0 auto;
     max-width :800px;
+ 
 }
 
 header{
@@ -37,15 +48,16 @@ h1{
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 1em;
     justify-content: center;
-    margin: 0 auto;
+    margin: auto 1em;
     max-width: 90%;
     min-height: 10em;
     width: 100%;
     
 }
-#headshot {
-    margin: 0 auto;
-    
+
+#headshot{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -55,13 +67,72 @@ h1{
     color: Black;
     
 }
+
+#contactInfo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#contactButton{
+    background-color:rgb(24, 12, 126);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    height: 20%;
+    width: 80%;
+    margin: 1em auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.modalContent {
+    background-color: rgb(24, 12, 126);
+    border: 1px solid #888;
+    color: white;
+    font-size: 26px;
+    margin: 15% auto;
+    padding: 20px;
+    text-decoration: none;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #aboutMeContainer ul{
     display: flex;
     flex-flow: column;
     justify-content: center;
     list-style-type: none;
-    
-    
+    max-width: 90%;
+    margin: auto auto;
+    padding: auto auto;
+    font-size: 16px;
+    text-decoration: none;
+       
 }
 #aboutMe img{
     
@@ -69,10 +140,20 @@ h1{
     width: 70%;
     
 }
-#aboutMeParagrah{
-grid-column: 1 2fr;
-margin-top: 2em; 
-        }
+
+#contactList a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#aboutMetext{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+
 
 
 h2, h3{
@@ -93,6 +174,77 @@ section ul{
     list-style-type: none;
     padding-left: 1.5em;
     
+}
+
+#mainCarousel{
+    max-width: 1000px;
+    position: relative;
+    margin: auto auto;
+    height: 550px;
+    padding: auto;
+}
+
+.imageCarousel{
+    display: none;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+
+@-webkit-keyframes fade {
+   
+}
+
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+.next{
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background: rgba(24, 12, 126, 0.8);
+    color: white;
+}
+
+.projectName{
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    text-align: center;
+}
+
+.slideNum{
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+#projects{
+    display: none;
 }
 #projectsContainer {
     display: grid;
@@ -151,12 +303,23 @@ section ul{
     display: grid;
     justify-content: left;
 }
+.close1 {
+    color: black;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+.close1:hover, .close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 
 
 
-nav{
+.navBar{
     background: rgb(24, 12, 126);
     display: flex;
     flex-flow: row;
@@ -165,15 +328,59 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+    cursor: pointer;
     
+    
+
 }
-        nav a{
+
+
+        .navBar a{
             color: white;
             padding: .5em 2em;
             text-decoration: none;
         }
+
+        .dropDown{
+            position: relative;
+            display: inline-block;
+
+        }
+      
+        .dropdownContent{
+            display: none;
+            position: absolute;
+            background-color: #666;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdownContent a{
+            display: none;
+            background-color:rgb(82, 65, 235);
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        .dropDown .dropButton{
+            display: none;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 8px 32px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
         
-        nav a:hover{
+
+        .navBar a:hover, .dropDown:hover .dropButton{
             background: #999;
             transition: 1s;
             
@@ -203,12 +410,15 @@ footer p{
         justify-content: center;
         align-content: center;
         width: 100%;
+        padding: 1em 1em;
     }
+    
     #projectsContainer {
         display: flex;
         flex-flow: column;
-        width: 100%;
         margin-bottom: 90px;
+        max-width: 100%;
+        width: 100%;
     }
 
     #contactInfo h3{
@@ -228,8 +438,7 @@ footer p{
         align-content: center;
         display: flex;
         justify-content: center;
-        height: 12em;
-        width: 14em;
+        margin: auto auto;       
         max-width: 90%;
         max-height: 90%;
         
@@ -237,12 +446,93 @@ footer p{
         
     }
 
+    .modalContent{
+        width: 90%;
+    }
+
+    #projectCarousel{
+        display: none;
+    }
+    
+    #projects{
+        display: block;
+    }
+
     .projectBoxes{
         padding-bottom: 8em;
+        
     }
 
     .projectBoxes ul{
         margin-bottom: 1em;
+        width:100%
+    }
+
+    .mainNavItems{
+        display: none;
+    }
+
+    .navBar{
+        display: flex;
+        justify-content: left;
+    }
+
+    .dropButton{
+        display: block;
+        color: white;
+    }
+    .navDrop{
+        display: block;
+        color: white;
+    }
+  
+    
+    .dropDown{
+        
+        position: relative;
+        flex-flow: column;
+
+    }
+    
+    .dropdownContent{
+        display: none;
+        position: absolute;
+        background-color: #666;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .dropdownContent a{
+        display: none;
+        background-color:rgb(82, 65, 235);
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+
+    }
+
+    .dropDown .dropButton{
+        display:block;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 8px 32px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .close1{
+        padding-right: 1em;
+    }
+
+  
+
+    .show{
+        display: block;
     }
     footer {
         font-size: 10px;
