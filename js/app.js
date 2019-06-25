@@ -23,36 +23,37 @@ function showSlides(n) {
 
 function navOnClick() {
     document.getElementById("navDrop").classList.toggle("show");
+
+    
         
 }
 
+
 window.onclick = function(event) {
-      var dropdowns = document.getElementsByClassName("dropdownContent");
-      if(event.target == dropdowns) {
-            dropdowns.style.display = "none";
+    if(!event.target.matches('dropButton')) {
+        var dropdowns = document.getElementsById("show");
+           
+        dropdowns.classList.toggle('navDrop');
+            
         }
     }
 
 
-var closebtns = document.getElementsByClassName("close1");
-var i;
-
-for (i = 0; i < closebtns.length; i++) {
-        closebtns[i].addEventListener("click", function() {
-        this.parentElement.style.display = 'none';
+    
+    var coll = document.getElementsByClassName("descDrop");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
       });
     }
-function openTab(tabName) {
-    let i, x;
-    x = document.getElementsByClassName("descContent");
-    for (i=0; i< x.length; i++) { if(
-        x[i].style.display = "none")      
-          document.getElementById(tabName).style.display ="block"  }
-        //   if(x[i].style.display = "block")   {
-        //     document.getElementById(tabName).style.display ="none"
-        //   } 
-              
-        }
 
 var modal = document.getElementById("contactModal");
 
