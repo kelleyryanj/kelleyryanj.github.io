@@ -30,14 +30,17 @@ function navOnClick() {
 
 
 window.onclick = function(event) {
-    if(!event.target.matches('dropButton')) {
-        var dropdowns = document.getElementsById("show");
-           
-        dropdowns.classList.toggle('navDrop');
-            
+    if (!event.target.matches('.dropButton')) {
+      var dropdowns = document.getElementsByClassName("dropdownContent");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
         }
+      }
     }
-
+  }
 
     
     var descDrop = document.getElementsByClassName("descDrop");
